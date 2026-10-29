@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "CharmPkk"
+version = "28.10.26b2"
+description = "Красивые интерфейсы, продвинутая работа с файлами, сетью, безопасное чтение памяти и встроенный браузер для Python."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "CharmLxt", email = "reception.mailspypi@gmail.com" }]
+keywords = [
+    "ui", "console", "terminal", "tui", "tkinter", "gui",
+    "acrylic", "mica", "glass", "particles", "animation",
+    "installer", "files", "browser", "charmpkk", "cllqn", "memory",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Environment :: Console",
+    "Environment :: X11 Applications",
+    "Topic :: Software Development :: User Interfaces",
+    "Topic :: System :: Filesystems",
+    "Topic :: Internet :: WWW/HTTP :: Browsers",
+    "Topic :: System :: Networking :: Monitoring",
+]
+
+[project.urls]
+Homepage = "https://pypi.org/project/CharmPkk/"
+
+[project.scripts]
+revck = "charmpkk.revck:main"
+pretmod = "charmpkk.terminals:run_pretmod"
+collquan = "charmpkk.terminals:run_collquan"
+
+[project.optional-dependencies]
+archives = ["py7zr>=0.20", "rarfile>=4.0"]
+trash = ["Send2Trash>=1.8"]
+full = [
+    "py7zr>=0.20",
+    "rarfile>=4.0",
+    "Send2Trash>=1.8",
+    "brotli>=1.1",
+]
+
+[tool.setuptools.packages.find]
+include = ["charmpkk*"]
